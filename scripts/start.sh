@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Navega até a pasta da aplicação
 cd /home/ubuntu/HelloReact
 
-# Instala dependências (opcional)
+# Corrige permissões
+sudo chown -R ubuntu:ubuntu .
+
+# Instala dependências
 npm install
 
-# Inicia a aplicação com PM2 (ou node direto se preferir)
-pm2 start app.js --name "HelloReact"
+# Compila o projeto com compatibilidade OpenSSL
+NODE_OPTIONS=--openssl-legacy-provider npm run build
+
+# Inicia com o 'serve' (modo produção)
+pm2 start "serve -s build" --name HelloReact
