@@ -7,4 +7,4 @@ cd /home/ubuntu/helloreact/
 npm install
 
 # Inicia a aplicação com PM2 (ou node direto se preferir)
-pm2 start app.js --name "helloreact"
+pm2 start app.js --name "HelloReact"
