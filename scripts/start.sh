@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navega até a pasta da aplicação
-cd /home/ubuntu/helloreact/
+cd /home/ubuntu/HelloReact/
 
 # Instala dependências (opcional)
 npm install
