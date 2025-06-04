@@ -1,3 +1,5 @@
 #!/bin/bash
 
-pm2 stop HelloReact || true
+nomeApp="HelloReact"
+
+sudo supervisorctl stop $nomeApp
