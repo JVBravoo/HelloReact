@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    s3_bucket: "s3://meu-bucket-site-react"
+    s3_bucket: "s3://jvictor-lab05"
 
 phases:
   install:
