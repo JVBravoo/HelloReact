@@ -1,13 +1,13 @@
-version:0.2
+version: 0.2
 
 env:
   variables:
-    s3_bucket:"s3://jvictor-lab05"
+    S3_BUCKET: "s3://jvictor-lab05"
 
 phases:
   install:
     commands:
-      - npm i npm@9 -g
+      - npm install -g npm@9
       - pip install --upgrade pip
       - pip install --upgrade awscli
 
@@ -21,4 +21,4 @@ phases:
 
   post_build:
     commands:
-      - aws s3 cp ./build $s3_bucket --recursive
+      - aws s3 cp build/ $S3_BUCKET --recursive
