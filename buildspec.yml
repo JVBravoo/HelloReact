@@ -2,6 +2,7 @@ version: 0.2
 
 env:
   variables:
+    NODE_OPTIONS: "--openssl-legacy-provider"
     S3_BUCKET: "s3://jvictor-lab05"
 
 phases:
