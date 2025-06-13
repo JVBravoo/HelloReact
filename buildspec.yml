@@ -8,7 +8,7 @@ env:
 phases:
   install:
     commands:
-      - npm install -g npm@9
+      - npm i npm@9 -g
       - pip install --upgrade pip
       - pip install --upgrade awscli
 
