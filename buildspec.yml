@@ -2,13 +2,13 @@ version: 0.2
 
 env:
   variables:
-    NODE_OPTIONS: "--openssl-legacy-provider"
+    NODE_OPTIONS: ""
     S3_BUCKET: "s3://jvictor-lab05"
 
 phases:
   install:
     commands:
-      - npm i npm@latest -g
+      - npm i npm@9 -g
       - pip install --upgrade pip
       - pip install --upgrade awscli
 
